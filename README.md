@@ -37,8 +37,9 @@ We use this categorical data encoding technique when the features are nominal(do
 • Yeojohnson method
 
 ## CODING AND OUTPUT:
-### Developed by : LAAKSHIT D
-### Reg No : 212222230071
+
+#### Developed by : LAAKSHIT D
+#### Reg No : 212222230071
 
 ```python
 
@@ -188,19 +189,19 @@ df["Highly Positive Skew_boxcox"], parameters=stats.boxcox(df["Highly Positive S
 df
 ```
 
-![319861757-fd614327-c87a-46fa-883e-0dce5e136cce](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/2532f626-ec68-4ec9-b417-6e6d98e79f57)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/9d45f11f-747a-4049-84ec-dab901024ebe)
 
 ```py
 df.skew()
 ```
 
-![319861793-805e86cf-f9f5-4e20-a2ea-6b7328bc6443](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/8409f0fd-1134-41f1-9d54-6c2dc904edc2)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/4f53c3a9-b434-45bc-a5fb-54bd550faf43)
 
 ```py
 df["Highly Negative Skew_yeojohnson"],parameters=stats.yeojohnson(df["Highly Negative Skew"])
 ```
 
-![319861825-6ce34d13-c097-4706-b409-4cf80b55e39e](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/66035a7a-5708-430e-a2a3-0c0191dee49b)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/418bece0-1fb2-4755-ab60-d1e513ce2c61)
 
 ```py
 import seaborn as sns
@@ -210,14 +211,7 @@ sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
 
-![319861866-55399f4f-9c8c-4be0-b747-31da55de4387](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/87966f02-982b-4c43-bdf0-b9ee9992dbbe)
-
-```py
-sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
-plt.show()
-```
-
-![319861899-54adc02b-d562-442c-be3a-466037a3c753](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/4f686d45-2277-46ac-a498-241f17a297f3)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/8a815fa2-8cbf-4e96-9e68-fb409f9d600d)
 
 ```py
 from sklearn.preprocessing import QuantileTransformer
@@ -229,7 +223,7 @@ sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
 
-![319861945-0388b0c8-b211-45ad-a901-321712a8c922](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/31e9fb93-4a26-45b3-a4c0-1a230b83b9ac)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/56732eb4-9f7d-4a61-bca8-12b5c28969fb)
 
 ```py
 df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
@@ -237,15 +231,14 @@ sm.qqplot(df["Highly Negative Skew"],line='45')
 plt.show()
 ```
 
-![319861982-c82b4630-bfe9-4d2b-9250-bb22d423b2f4](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/633826a7-3484-481b-a03b-4ca033021613)
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/78229a41-e3a8-417d-88ad-7dcdf9239c63)
 
 ```py
 sm.qqplot(df["Highly Negative Skew_1"],line='45')
 plt.show()
 ```
 
-![319862041-e86811e2-d338-4d47-8285-9387cf87c191](https://github.com/Praveen0500/EXNO-3-DS/assets/120218611/0a23c373-4be7-4f31-ac5a-cb697781b896)
-
+![image](https://github.com/laakshit-D/EXNO-3-DS/assets/119559976/d0d06c43-5562-4a89-b2ad-72514b083dd1)
 
 ## RESULT:
 Thus the given data, Feature Encoding, Transformation process and save the data to a file was performed successfully.
